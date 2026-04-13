@@ -1,9 +1,9 @@
-import {series} from "./data.js";
-import {serie} from "./serie.js";
+import { series } from "./data.js";
+import { Serie } from "./serie.js";
 
 const tbody = document.getElementById("series-tbody")!;
 
-function renderSeriesInTable(series: serie[]): void {
+function renderSeriesInTable(series: Serie[]): void {
     series.forEach((serie) => {
         let row = document.createElement("tr");
 

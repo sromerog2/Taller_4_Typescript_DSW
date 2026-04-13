@@ -1,25 +1,14 @@
 {
   "compilerOptions": {
-    /* Lenguaje */
-    "target": "es2020",
+    "target": "ES2020",
+    "module": "ES2020",
+    "moduleResolution": "bundler",
 
-    /* Módulos (CLAVE para evitar tu error) */
-    "module": "Node16",
-    "moduleResolution": "node16",
-    "verbatimModuleSyntax": false,
-
-    /* Estructura del proyecto */
-    "rootDir": "./src",
-    "outDir": "./src",
-
-    /* Tipado y seguridad */
     "strict": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
 
-    /* Calidad de vida */
-    "skipLibCheck": true
+    "forceConsistentCasingInFileNames": true
   },
-
-  "include": ["src/**/*"]
+  "include": ["src"]
 }

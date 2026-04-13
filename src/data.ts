@@ -1,4 +1,4 @@
-import { Serie } from "./Serie.js";
+import { Serie } from "./serie.js";
 
 export const series: Serie[] = [
     new Serie(1, "Breaking Bad", "AMC", 5, "Descripción...", "https://...", "https://..."),
