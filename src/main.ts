@@ -2,6 +2,7 @@ import { series } from "./data.js";
 import { Serie } from "./serie.js";
 
 const tbody = document.getElementById("series-tbody")!;
+const avgElement = document.getElementById("average")!;
 
 function renderSeriesInTable(series: Serie[]): void {
     series.forEach((serie) => {
@@ -17,5 +18,17 @@ function renderSeriesInTable(series: Serie[]): void {
         tbody.appendChild(row);
     });
 }
+
+function getSeasonsAverage(series: Serie[]): number {
+    let total = 0;
+
+    series.forEach((serie) => {
+        total += serie.seasons;
+    });
+
+    return total / series.length;
+}
+
+avgElement.innerHTML = "Seasons average: " + getSeasonsAverage(series);
 
 renderSeriesInTable(series);
